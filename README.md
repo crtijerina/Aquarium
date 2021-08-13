@@ -1,10 +1,10 @@
 Aquarium
 
 
-Aquarium is our  social platform app for created for users to interact with one another.  Taking in users name, email, Password, commits page, letting our user have the space to be themselves by providing a short bio with pictures. We don’t believe in videos, but that’s just part of the fun. We want our users to experience the full effect of being able to meet new people that are truly people and not bots. 100% real people.
+Aquarium is our social platform app created for users to interact with one another. Taking in users name, email, Password, commits page, letting our user have the space to be themselves by providing a short bio with a picture. We don’t believe in videos, but that’s just part of the fun. We want our users to experience the full effect of being able to meet new people that might want to share and learn new insights about what they are intersted in.
 
 Disclaimer: 
-This platform will be a safe place for friends to discuss whatever they want, nothing off the table. With that said we are not responsible for any false information. Use at your own risk.   
+This platform will be a safe place for friends to discuss whatever they want when they want. With that said we are not responsible for any false information. Use at your own risk.   
 
 
 Handle Bars is our Templets creating service, My SQL data base,  Express JS (node) api creation , Heroku is the online deployment , Bcrypt will be our password hashing function service.  Connect-Session-Sequelize will be the service for cookies. New Technology TBD. 
