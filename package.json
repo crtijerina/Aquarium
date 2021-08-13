@@ -1,0 +1,20 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "Unit 15: Project 2 Overview Welcome to Project 2! Take a moment to think about what you’ve just accomplished. In the last six weeks, you broadened your skill set with all the necessary back-end technologies that complement the foundational front-end technologies you learned in the first part of this course. As a result, you can finally call yourself a full-stack developer!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crtijerina/Project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crtijerina/Project-2/issues"
+  },
+  "homepage": "https://github.com/crtijerina/Project-2#readme"
+}
