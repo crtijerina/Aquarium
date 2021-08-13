@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/crtijerina/Project-2/issues"
   },
-  "homepage": "https://github.com/crtijerina/Project-2#readme"
+  "homepage": "https://github.com/crtijerina/Project-2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0"
+  }
 }
