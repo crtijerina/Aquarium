@@ -1,4 +1,14 @@
-# Project-2
+Aquarium
+
+
+Aquarium is our  social platform app for created for users to interact with one another.  Taking in users name, email, Password, commits page, letting our user have the space to be themselves by providing a short bio with pictures. We don’t believe in videos, but that’s just part of the fun. We want our users to experience the full effect of being able to meet new people that are truly people and not bots. 100% real people.
+
+Disclaimer: 
+This platform will be a safe place for friends to discuss whatever they want, nothing off the table. With that said we are not responsible for any false information. Use at your own risk.   
+
+
+Handle Bars is our Templets creating service, My SQL data base,  Express JS (node) api creation , Heroku is the online deployment , Bcrypt will be our password hashing function service.  Connect-Session-Sequelize will be the service for cookies. New Technology TBD. 
+
 
 Unit 15: Project 2
 Overview
@@ -6,7 +16,9 @@ Welcome to Project 2! Take a moment to think about what you’ve just accomplish
 
 Over the next two weeks, you’ll work on your second group project to create an interactive full-stack application. For this project, you’ll want to start from scratch instead of using the front end you developed for your first project. This will help you practice your existing front-end abilities, reinforce those skills, and solidify how you conceive of the dynamic between the front end and back end. You’ll also have another chance to work as most developers do—collaboratively.
 
-Key Topics
+
+
+Key Topics To Remeber  
 Collaborative full-stack development
 
 Git workflow in groups
