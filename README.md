@@ -17,7 +17,7 @@ Welcome to Project 2! Take a moment to think about what you’ve just accomplish
 Over the next two weeks, you’ll work on your second group project to create an interactive full-stack application. For this project, you’ll want to start from scratch instead of using the front end you developed for your first project. This will help you practice your existing front-end abilities, reinforce those skills, and solidify how you conceive of the dynamic between the front end and back end. You’ll also have another chance to work as most developers do—collaboratively.
 
 
-
+----------------------------------------------------------------------------
 Key Topics To Remeber  
 Collaborative full-stack development
 
