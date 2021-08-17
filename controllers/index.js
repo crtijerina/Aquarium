@@ -1,7 +1,7 @@
 
 // passport authintcation
 
-app.post('/aquarium.html',
+app.post('/aquarium.handlebars',
   passport.authenticate('local', { successRedirect: '/',
                                    failureRedirect: '/login',
                                    failureFlash: true })

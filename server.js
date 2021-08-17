@@ -47,6 +47,9 @@ app.use(passport.session())
 app.get('/', (req, res) => {
     res.render('landing', { name: "Aquarium"});
   });
+  app.get('/aquarium', (req, res) => {
+    res.render('aquarium');
+  });
   app.get('/register', (req, res) => {
     res.render('register', { name: "Aquarium"});
   });
@@ -65,7 +68,7 @@ res.redirect('/register')
   console.log(users)
   });
   app.post('/', passport.authenticate('local', {
-    successRedirect: '/aquarium.html',
+    successRedirect: '/aquarium',
     failureRedirect: '/',
     failureFlash: true 
   }))
@@ -73,3 +76,4 @@ res.redirect('/register')
   app.listen(PORT, () => {
     console.log(`hello form TX ${PORT}`);
   });
+
