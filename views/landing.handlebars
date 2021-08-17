@@ -1,9 +1,12 @@
-<h1 class="title is-1">welcome to <span class="title is-5">Aquarium</span> </h1>
+<h1 class="title is-1">welcome to  <span class="title is-5">{{name}}</span> </h1>
+{{#if messages.error}}
+{{messages.error}}
+{{/if}}
 
 {{!-- login form --}}
-<form action="/aquarium.html" method="post" class="box">
+<form action="/" method="POST" class="box">
   <div class="field">
-    <label class="label">username</label>
+    <label class="label">Username</label>
     <div class="control">
       <input class="input" type="text" name="username" placeholder="e.g. alex@example.com">
     </div>
@@ -16,25 +19,6 @@
     </div>
   </div>
 
-  <button class="button is-primary" type="submit">Sign in</button>
+  <button class="button is-primary" type="submit">Login</button>
 </form>
-
-{{!-- registation form --}}
-
-<form class="box">
-  <div class="field">
-    <label class="label">Email</label>
-    <div class="control">
-      <input class="input" type="email" placeholder="e.g. alex@example.com">
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label">Password</label>
-    <div class="control">
-      <input class="input" type="password" placeholder="********">
-    </div>
-  </div>
-
-  <button class="button is-primary">Register</button>
-</form>
+<a href="/register">Register</a>
