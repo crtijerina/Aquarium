@@ -10,6 +10,8 @@ app.set('view engine', 'handlebars');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(require('/controllers/'))
 // ROUTER
 // ===========================================================
 app.get('/', (req, res) => {
