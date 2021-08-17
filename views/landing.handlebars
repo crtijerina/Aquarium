@@ -1,3 +1,26 @@
+<h1 class="title is-1">welcome to <span class="title is-5">Aquarium</span> </h1>
+
+{{!-- login form --}}
+<form action="/aquarium.html" method="post" class="box">
+  <div class="field">
+    <label class="label">username</label>
+    <div class="control">
+      <input class="input" type="text" name="username" placeholder="e.g. alex@example.com">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Password</label>
+    <div class="control">
+      <input class="input" type="password" placeholder="********" name="password">
+    </div>
+  </div>
+
+  <button class="button is-primary" type="submit">Sign in</button>
+</form>
+
+{{!-- registation form --}}
+
 <form class="box">
   <div class="field">
     <label class="label">Email</label>
@@ -13,5 +36,5 @@
     </div>
   </div>
 
-  <button class="button is-primary">Sign in</button>
+  <button class="button is-primary">Register</button>
 </form>
