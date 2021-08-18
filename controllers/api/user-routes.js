@@ -1,10 +1,11 @@
 const router = require('express').Router();
+const { User, Post , Comment} = require('../../models');
 
 
 // get all 
 router.get('/', (req, res) => {
   User.findAll({
-    // attributes: { exclude: ['password'] }
+    attributes: { exclude: ['password'] }
   })
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
@@ -15,24 +16,24 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   User.findOne({
-    // attributes: { exclude: ['password'] },
+    attributes: { exclude: ['password'] },
     where: {
       id: req.params.id
     },
-    // include: [
-    //   {
-    //     model: Post,
-    //     attributes: ['id', 'title', 'contents', 'created_at']
-    //   },
-    //   {
-    //     model: Comment,
-    //     attributes: ['id', 'comment_text', 'created_at'],
-    //     include: {
-    //       model: Post,
-    //       attributes: ['title']
-    //     }
-    //   }
-    // ]
+    include: [
+      {
+        model: Post,
+        attributes: ['id', 'title', 'contents', 'created_at']
+      },
+      {
+        model: Comment,
+        attributes: ['id', 'comment_text', 'created_at'],
+        include: {
+          model: Post,
+          attributes: ['title']
+        }
+      }
+    ]
   })
     .then(dbUserData => {
       if (!dbUserData) {
@@ -51,17 +52,17 @@ router.post('/', (req, res) => {
   console.log(req.body.username)
   // expects {username: 'Username123', email: 'test@gmail.com', password: 'password1234'}
   User.create({
-    // username: req.body.username,
-    // email: req.body.email,
-    // password: req.body.password
+    username: req.body.username,
+    email: req.body.email,
+    password: req.body.password
   })
     
     .then(dbUserData => {
       
       req.session.save(() => {
-        // req.session.user_id = dbUserData.id;
-        // req.session.username = dbUserData.username;
-        // req.session.loggedIn = true;
+        req.session.user_id = dbUserData.id;
+        req.session.username = dbUserData.username;
+        req.session.loggedIn = true;
   
         res.json(dbUserData);
       });
@@ -76,7 +77,7 @@ router.post('/login', (req, res) => {
   // expects {email: 'test@gmail.com', password: 'password1234'}
   User.findOne({
     where: {
-    //   email: req.body.email
+      email: req.body.email
     }
   }).then(dbUserData => {
     if (!dbUserData) {
