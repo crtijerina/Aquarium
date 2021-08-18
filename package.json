@@ -18,8 +18,6 @@
   },
   "homepage": "https://github.com/crtijerina/Project-2#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "mysql2": "^2.3.0",
     "bcrypt": "^5.0.1",
     "bulma": "^0.9.3",
     "connect-session-sequelize": "^7.1.1",
