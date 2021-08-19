@@ -1,0 +1,162 @@
+charset "utf-8";  
+  
+/* CSS Document */  
+  
+.h1 {  
+    color: #996;  
+}  
+  
+.h2 {  
+    color: #996;  
+}  
+  
+.p {  
+    color: #9C9;  
+}  
+  
+.body {  
+    background-image: url(bg.jpg);  
+}  
+  
+.wrapper {  
+    width: 880px;  
+    height: 950px;  
+    overflow: hidden;  
+    margin: 30px auto 30px auto;  
+    position: relative;  
+}  
+  
+.header {  
+    width: 880px;  
+    height: 130px;  
+}  
+  
+.header-logo {  
+    width: 183px;  
+    height: 120px;  
+    background-image: url(sma-solar-technology-logo.png);  
+    background-image: no-repeat;  
+    float: left;  
+}  
+  
+.header-text {  
+    width: 100px;  
+    height: 120px;  
+    margin: 0 5px;  
+    float: left;  
+}  
+  
+.header-mini-logo {  
+    width: 84px;  
+    height: 16px;  
+    float: right;  
+    margin: 5px;  
+}  
+  
+.navbar {  
+    width: 880px;  
+    height: 40px;  
+    background-image: url(menu_bg.jpg);  
+}  
+  
+.navbar ul {  
+    width: auto;  
+    float: left;  
+    display: block;  
+    list-style: none;  
+    padding: 2px 0 0 130px;  
+    margin: 0px;  
+    text-align: center;  
+}  
+  
+.navbar ul li {  
+    display: inline;  
+    padding: 0px;  
+    margin: 0px;  
+    height: 37px;  
+}  
+  
+.navbar ul li a {  
+    display: block;  
+    padding: 0px;  
+    padding: 0 17px 0 17px;  
+    float: left;  
+    text-decoration: none;  
+    text-align: center;  
+    color: #fff;  
+    font-size: 13px;  
+    line-height: 34px;  
+}  
+  
+.navbar ul li a:hover {  
+    color: #0C9;  
+}  
+  
+.mainbody {  
+    width: 870px;  
+    height: 750px;  
+    margin: 15px 2px 0px 2px;  
+    border-radius: 10px;  
+    background-color: #fff;  
+}  
+  
+.mainbody-right {  
+    width: 150px;  
+    height: 300px;  
+    border-radius: 10px;  
+    margin: 10px 10px 0px 10px;  
+    float: right;  
+}  
+  
+.mainbody-right a {  
+    color: #996;  
+    text-decoration: none;  
+}  
+  
+.mainbody-right a:hover {  
+    color: #0C9;  
+    text-decoration: underline;  
+}  
+  
+.mainbody-center {  
+    width: 670px;  
+    height: auto;  
+    border-radius: 10px;  
+    margin: 10px 10px 0px 10px;  
+    float: left;  
+}  
+  
+.footer {  
+    width: 880px;  
+    height: 40px;  
+    background-image: url(menu_bg.jpg);  
+    margin: 10px auto 20px auto;  
+}  
+  
+.footer p {  
+    color: #fff;  
+    margin: 2px;  
+    padding: 3px;  
+}  
+  
+.footer a {  
+    color: #fff;  
+    margin: 2px;  
+    padding: 3px;  
+    text-decoration: none;  
+}  
+  
+.footer a:hover {  
+    color: #0C9;  
+    text-decoration: underline;  
+}  
+  
+.footer-right {  
+    width: 80px;  
+    height: 40px;  
+    float: right;  
+}  
+  
+.footer-right a {  
+    color: #fff;  
+} 
