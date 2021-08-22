@@ -104,4 +104,7 @@ router.get('/register', (req, res) => {
     
 });
 
+router.get('/aquarium', (req, res) => {
+  res.render('aquarium')
+})
 module.exports = router;
