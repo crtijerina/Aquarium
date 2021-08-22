@@ -1,5 +1,23 @@
 const router = require('express').Router();
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
 const { User, Post , Comment} = require('../../models');
+
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+    User.findOne(
+      {where:{username: username}}, function (err, user) {
+      if (err) { return done(err); }
+      if (!user) {
+        return done(null, false, { message: 'Incorrect username.' });
+      }
+      if (!user.checkPassword(password)) {
+        return done(null, false, { message: 'Incorrect password.' });
+      }
+      return done(null, user);
+    });
+  }
+));
 
 
 // get all 
@@ -74,10 +92,11 @@ router.post('/', (req, res) => {
 });
 
 router.post('/login', (req, res) => {
+  
   // expects {email: 'test@gmail.com', password: 'password1234'}
   User.findOne({
     where: {
-      email: req.body.email
+      username: req.body.username
     }
   }).then(dbUserData => {
     if (!dbUserData) {
@@ -85,6 +104,10 @@ router.post('/login', (req, res) => {
       return;
     }
 
+    // passport.authenticate('local', { failureRedirect: '/login'})
+    // .then((userData) => info=userData)
+    
+    
     const validPassword = dbUserData.checkPassword(req.body.password);
 
     if (!validPassword) {
@@ -101,6 +124,7 @@ router.post('/login', (req, res) => {
     });
   });
 });
+
 
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {

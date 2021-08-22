@@ -5,16 +5,17 @@ async function loginFormHandler(event) {
     const password = document.querySelector('#password-login').value.trim();
   
     if (username && password) {
-      const response = await fetch('/api/users/landing', {
+      const response = await fetch('/api/users/login', {
         method: 'post',
         body: JSON.stringify({
-          email,
+          username,
           password
         }),
         headers: { 'Content-Type': 'application/json' }
       });
   
       if (response.ok) {
+          
         document.location.replace('/aquarium');
       } else {
         alert(response.statusText);

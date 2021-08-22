@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-require('./config/passport')
+
 const sess = {
   secret: 'Super secret secret',
   cookie: {},
@@ -24,8 +24,6 @@ const sess = {
 };
 
 app.use(session(sess));
-app.use(passport.initialize())
-app.use(passport.session())
 app.use(passport.initialize())
 app.use(passport.session())
 

@@ -4,22 +4,22 @@
 {{/if}}
 
 {{!-- login form --}}
-<form action="/" method="POST" class="box">
+<form class="login-form">
   <div class="field">
     <label class="label">Username</label>
     <div class="control">
-      <input id="name" class="input" type="text" name="name" placeholder="e.g. alex@example.com">
+      <input id="username-login" class="input" type="text" name="username" placeholder="e.g. alex@example.com">
     </div>
   </div>
 
   <div class="field">
     <label class="label">Password</label>
     <div class="control">
-      <input id="password" class="input" type="password" placeholder="********" name="password">
+      <input id="password-login" class="input" type="password" placeholder="********" name="password">
     </div>
   </div>
 
   <button id="login-form" class="button is-primary" type="submit">Login</button>
 </form>
 <a href="/register">Register</a>
-{{!-- <script src="../public/JS/login.js" ></script> --}}
+<script src="/JS/login.js" ></script>
