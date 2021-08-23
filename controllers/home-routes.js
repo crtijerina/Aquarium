@@ -89,7 +89,7 @@ router.get('/post/:id', (req, res) => {
 });
 
 
-router.get('/landing', (req, res) => {
+router.get('/', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/aquarium');
   }

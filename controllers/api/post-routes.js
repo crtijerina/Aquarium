@@ -83,6 +83,7 @@ router.get('/', (req, res) => {
     })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {
+        console.log("This is the error")
         console.log(err);
         res.status(500).json(err);
       });
@@ -128,7 +129,6 @@ router.get('/', (req, res) => {
         res.json(dbPostData);
       })
       .catch(err => {
-        console.log(err);
         res.status(500).json(err);
       });
   });
