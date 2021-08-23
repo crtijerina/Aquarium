@@ -1,5 +1,9 @@
-Aquarium
+# Aquarium ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## Title
+  Aquarium
+
+## Description
 
 Aquarium is our social platform app created for users to interact with one another. Taking in users name, email, Password, commits page, letting our user have the space to be themselves by providing a short bio with a picture. We don’t believe in videos, but that’s just part of the fun. We want our users to experience the full effect of being able to meet new people that might want to share and learn new insights about what they are intersted in.
 
@@ -9,44 +13,53 @@ This platform will be a safe place for friends to discuss whatever they want whe
 
 Handle Bars is our Templets creating service, My SQL data base,  Express JS (node) api creation , Heroku is the online deployment , Bcrypt will be our password hashing function service.  Connect-Session-Sequelize will be the service for cookies. New Technology TBD. 
 
+## Table of Contents
 
-Unit 15: Project 2
-Overview
-Welcome to Project 2! Take a moment to think about what you’ve just accomplished. In the last six weeks, you broadened your skill set with all the necessary back-end technologies that complement the foundational front-end technologies you learned in the first part of this course. As a result, you can finally call yourself a full-stack developer!
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
 
-Over the next two weeks, you’ll work on your second group project to create an interactive full-stack application. For this project, you’ll want to start from scratch instead of using the front end you developed for your first project. This will help you practice your existing front-end abilities, reinforce those skills, and solidify how you conceive of the dynamic between the front end and back end. You’ll also have another chance to work as most developers do—collaboratively.
+  ## Usage 
+  This social media site is for a small knit community to use and help foster communication with others upon a smaller site.
 
-
+ You can find the website at: https://serene-refuge-32397.herokuapp.com/
 ----------------------------------------------------------------------------
-Key Topics To Remeber  
-Collaborative full-stack development
 
-Git workflow in groups
 
-Career preparation
+# Aquarium ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Comprehension Check
-You will be employer-ready if you can answer the following questions:
+  ## Title
+  Aquarium
+  
+  ## Description 
+  This is a full stack web development page, with front-end and back-end. Using mysql2, sequelize, express.js, dotenv, bcrypt, handlebars, express-session, and connect-session -sequelize. This page follows the MVC paradigm.
 
-Can you describe the functionality of your application?
+  ## Table of Contents
 
-How can you work efficiently with your team if everyone works remotely across different time zones?
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+    
+  ## Usage 
+  
 
-What is the MVC paradigm?
 
-Learning Objectives
-You will be employer-competitive if you are able to:
+  
+  ## Credits 
+  N
 
-Explain agile software development
+  ## License
+  
+  This project is licensed under the MIT license. 
+* [License](#license)
 
-Explain and execute git workflow in a collaborative project
 
-Track issue progress with industry standard tools
 
-Communicate with team members asynchronously
+  ## Contributing
+  All are free to improve this code, just send me a email to help out.
 
-Design, build, and deploy a full-stack web application using Heroku
+  ## Tests
+  This code was tested using Insomnia Core.
 
-Prepare a professional presentation and repository README for your project
-
-Speak technically about the features in your application
+  ## Questions:
+  

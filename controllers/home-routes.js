@@ -89,9 +89,9 @@ router.get('/post/:id', (req, res) => {
 });
 
 
-router.get('/', (req, res) => {
+router.get('/landing', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/landing');
+    res.redirect('/aquarium');
   }
 
   res.render('landing');
@@ -106,7 +106,5 @@ router.get('/register', (req, res) => {
 });
 
 
-router.get('/user-dashboard', (req, res) => {
-  res.render('user-dashboard')
-})
+
 module.exports = router;
