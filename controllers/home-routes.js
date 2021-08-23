@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment} = require('../models');
 
 // get all posts for homepage
-router.get('/', (req, res) => {
+router.get('/aquarium', (req, res) => {
   console.log('======================');
   Post.findAll({
     attributes: [
@@ -30,7 +30,7 @@ router.get('/', (req, res) => {
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
-      res.render('landing', {
+      res.render('aquarium', {
         posts,
         loggedIn: req.session.loggedIn
       });
@@ -88,9 +88,10 @@ router.get('/post/:id', (req, res) => {
     });
 });
 
-router.get('/login', (req, res) => {
+
+router.get('/', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/');
+    res.redirect('landing');
   }
 
   res.render('landing');
@@ -104,7 +105,8 @@ router.get('/register', (req, res) => {
     
 });
 
-router.get('/aquarium', (req, res) => {
-  res.render('aquarium')
+
+router.get('/user-dashboard', (req, res) => {
+  res.render('user-dashboard')
 })
 module.exports = router;

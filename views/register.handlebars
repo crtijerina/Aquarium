@@ -1,23 +1,32 @@
 <h1 class="title is-1">welcome to Aquarium!  <span class="title is-5">{{name}}</span> </h1>
 
 {{!-- registration form --}}
-<form action="/register" method="POST" class="box">
+<form class="signup-form">
   <div class="field">
-    <label class="label" for="name"> Username </label>
+    <label class="username" for="username-signup"> Username </label>
     <div class="control">
-      <input class="input" type="text" name="name" id="name"  placeholder="e.g. alex@example.com" 
+      <input class="input" type="text" name="name" id="username-signup"  placeholder="e.g. username123" 
       required>
     </div>
   </div>
 
-  <div class="field">
-    <label for="password" class="label">Password</label>
+<div class="field">
+    <label for="email-signup" class="label">Email</label>
     <div class="control">
-      <input class="input" type="password" id= "password" placeholder="********" name="password">
+      <input class="input" type="email" id= "email-signup" placeholder="alex@example.com" >
     </div>
   </div>
+
+  <div class="field">
+    <label for="password-signup" class="label">Password</label>
+    <div class="control">
+      <input class="input" type="password" id= "password-signup" placeholder="********" name="password">
+    </div>
+  </div>
+
+  
 
   <button id= "signup-form" class="button is-primary" type="submit">Register</button>
 </form>
 <a href="/">Login</a>
-
+<script src="/JS/register.js" ></script>

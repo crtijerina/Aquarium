@@ -25,6 +25,9 @@
           <a href="#Latest-post" style="opacity:0" class="button w-button">View Latest Posts</a>
         </div>
       </div>
+
+      
+
       <div class="category-section wf-section">
         <div class="w-container">
           <div class="w-dyn-list">
@@ -34,7 +37,13 @@
               </div>
             </div>
             <div class="w-dyn-empty">
-              <p>No items found.</p>
+              {{#each posts}}
+              <p>{{title}} 
+                <br>
+                {{contents}}
+                <br>
+                {{user.username}}</p>
+              {{/each}}
             </div>
           </div>
         </div>
