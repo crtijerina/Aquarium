@@ -1,4 +1,4 @@
-charset "utf-8";  
+
   
 /* CSS Document */  
   
@@ -160,3 +160,34 @@ charset "utf-8";
 .footer-right a {  
     color: #fff;  
 } 
+
+.post-title {
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.hero-content{
+    background-color: seagreen;
+}
+
+.posts{
+    background-color:lightblue;
+}
+
+.hero-heading{
+    background-color: seagreen;
+}
+
+.hero-subheading {
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.new-post-form{
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    background-color: seagreen;
+}

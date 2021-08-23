@@ -1,16 +1,22 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment} = require('../models');
+const withAuth = require('../utils/auth');
 
-// get all posts for homepage
-router.get('/aquarium', (req, res) => {
+// get all posts for dashboard
+router.get('/', withAuth, (req, res) => {
+  console.log(req.session);
   console.log('======================');
-  Post.findAll({
+   Post.findAll({
+    where: {
+      user_id: req.session.user_id
+    },
     attributes: [
       'id',
       'contents',
       'title',
       'created_at',
+      
     ],
     include: [
       {
@@ -29,25 +35,17 @@ router.get('/aquarium', (req, res) => {
   })
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
-
-      res.render('aquarium', {
-        posts,
-        loggedIn: req.session.loggedIn
-      });
+      console.log(posts)
+      res.render('user-dashboard', { posts, loggedIn: true });
     })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
-  
 
-// get single post
-router.get('/post/:id', (req, res) => {
-  Post.findOne({
-    where: {
-      id: req.params.id
-    },
+router.get('/edit/:id', withAuth, (req, res) => {
+  Post.findByPk(req.params.id, {
     attributes: [
       'id',
       'contents',
@@ -70,43 +68,20 @@ router.get('/post/:id', (req, res) => {
     ]
   })
     .then(dbPostData => {
-      if (!dbPostData) {
-        res.status(404).json({ message: 'No post found with this id' });
-        return;
+      if (dbPostData) {
+        const post = dbPostData.get({ plain: true });
+        
+        res.render('edit-post', {
+          post,
+          loggedIn: true
+        });
+      } else {
+        res.status(404).end();
       }
-
-      const post = dbPostData.get({ plain: true });
-
-      res.render('single-post', {
-        post,
-        loggedIn: req.session.loggedIn
-      });
     })
     .catch(err => {
-      console.log(err);
       res.status(500).json(err);
     });
 });
 
-
-router.get('/', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/landing');
-  }
-
-  res.render('landing');
-});
-
-router.get('/register', (req, res) => {
-  if(req.session.loggedIn){
-    res.redirect('/');
-  }
-    res.render('register');
-    
-});
-
-
-router.get('/user-dashboard', (req, res) => {
-  res.render('user-dashboard')
-})
 module.exports = router;
