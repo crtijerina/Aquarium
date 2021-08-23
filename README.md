@@ -23,30 +23,10 @@ Handle Bars is our Templets creating service, My SQL data base,  Express JS (nod
   This social media site is for a small knit community to use and help foster communication with others upon a smaller site.
 
  You can find the website at: https://serene-refuge-32397.herokuapp.com/
-----------------------------------------------------------------------------
 
-
-# Aquarium ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-
-  ## Title
-  Aquarium
-  
-  ## Description 
-  This is a full stack web development page, with front-end and back-end. Using mysql2, sequelize, express.js, dotenv, bcrypt, handlebars, express-session, and connect-session -sequelize. This page follows the MVC paradigm.
-
-  ## Table of Contents
-
-  * [Usage](#usage)
-  * [Credits](#credits)
-  * [License](#license)
-    
-  ## Usage 
-  
-
+ ![Screenshot (195)](https://user-images.githubusercontent.com/47751469/130395500-f03909a5-c762-432d-8840-ed5ae50340fe.png)
 
   
-  ## Credits 
-  N
 
   ## License
   
@@ -62,4 +42,9 @@ Handle Bars is our Templets creating service, My SQL data base,  Express JS (nod
   This code was tested using Insomnia Core.
 
   ## Questions:
+  If you have any questions don't hesitate to email us.
   
+----------------------------------------------------------------------------
+
+
+ 
